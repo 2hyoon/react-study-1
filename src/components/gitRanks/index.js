@@ -35,7 +35,6 @@ export default class GitRanks extends React.Component {
 
   isLoading = () => {
     const { language, repos } = this.state;
-
     return !repos[language];
   };
 
@@ -46,8 +45,11 @@ export default class GitRanks extends React.Component {
       <React.Fragment>
         <Header />
         <LangNav onUpdateLanguage={this.updateLanguage} language={language} />
-        {this.isLoading() && <FaSpinnerLoader />}
-        {repos[language] && <RepoCards repos={repos[language]} />}
+        {this.isLoading() ? (
+          <FaSpinnerLoader />
+        ) : (
+          <RepoCards repos={repos[language]} />
+        )}
       </React.Fragment>
     );
   }
