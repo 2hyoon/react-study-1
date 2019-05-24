@@ -79,17 +79,10 @@ a {
   color: inherit;
 }
 
-.link--light {
-  color: $gray-200;
+.link-hover-teal {
+  transition: all 0.2s;
 
   &:hover {
-    color: $gray-700;
-  }
-}
-
-.link-dark {
-  color: $gray-700;
-  &:hover {
-    color: $gray-200;
+    color: $teal;
   }
 }

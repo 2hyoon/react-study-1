@@ -49,3 +49,22 @@
 .text-capitalize {
   text-transform: capitalize !important;
 }
+
+// TODO
+.line-height-sm {
+  line-height: $line-height-sm;
+}
+.line-height-md {
+  line-height: $line-height-md;
+}
+.line-height-lg {
+  line-height: $line-height-lg;
+}
+
+//
+.word-break-all {
+  word-break: break-all;
+}
+.word-break-word {
+  word-break: break-word;
+}
