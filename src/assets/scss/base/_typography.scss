@@ -1,0 +1,95 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-lg;
+  color: $gray-900;
+}
+
+h1,
+.h1 {
+  font-size: rem(50px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h2,
+.h2 {
+  font-size: rem(40px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h3,
+.h3 {
+  font-size: rem(30px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h4,
+.h4 {
+  font-size: rem(22px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(16px);
+}
+
+h5,
+.h5 {
+  font-size: rem(22px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(16px);
+}
+
+h6,
+.h6 {
+  font-size: $font-size-base;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(12px);
+}
+
+p,
+.p {
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+  line-height: $line-height-md;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+a {
+  color: inherit;
+}
+
+.link--light {
+  color: $gray-200;
+
+  &:hover {
+    color: $gray-700;
+  }
+}
+
+.link-dark {
+  color: $gray-700;
+  &:hover {
+    color: $gray-200;
+  }
+}

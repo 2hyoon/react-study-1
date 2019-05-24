@@ -1,0 +1,120 @@
+@import '../../assets/scss/abstracts/variables';
+
+.btn {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-light;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+}
+
+.btn--sm {
+  font-size: $font-size-sm;
+  padding: 0.4rem 0.8rem;
+}
+
+.btn--md {
+  font-size: $font-size-base;
+  padding: 0.6rem 1.5rem;
+}
+
+.btn--lg {
+  font-size: $font-size-lg;
+  padding: 1rem 2rem;
+}
+
+.btn--blue {
+  color: $white;
+  background-color: $blue;
+  border-radius: 3px;
+  border: 1px solid $blue;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0px 0px 3px 0px $blue;
+  }
+}
+
+.btn--blue.enabled {
+  background-color: $white;
+  color: $blue;
+}
+
+.btn--gray {
+  color: $gray-100;
+  background-color: $gray-700;
+  border-radius: 5px;
+  border: 1px solid $gray-700;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $gray-100;
+    color: $gray-700;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0px 0px 2px 0px $gray-700;
+  }
+}
+.btn--gray.enabled {
+  background-color: $gray-100;
+  color: $gray-700;
+}
+
+.btn--white {
+  color: $gray-700;
+  background-color: $white;
+  border-radius: 5px;
+  border: 1px solid $gray-700;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $gray-700;
+    color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0px 0px 2px 0px $gray-700;
+  }
+}
+.btn--white.enabled {
+  background-color: $gray-700;
+  color: $white;
+}
+
+.btn--teal {
+  color: $gray-900;
+  background-color: $teal;
+  border-radius: 5px;
+  border: 1px solid $teal;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $gray-900;
+    border: 1px solid $gray-900;
+    color: $teal;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0px 0px 2px 0px $teal;
+  }
+}
+.btn--teal.enabled {
+  background-color: $teal;
+  color: $white;
+}

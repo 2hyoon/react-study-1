@@ -1,0 +1,51 @@
+// Alignment
+.text-justify {
+  text-align: justify !important;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-light {
+  font-weight: $font-weight-light;
+}
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.text-sm {
+  font-size: $font-size-sm;
+}
+.text-md {
+  font-size: $font-size-md;
+}
+.text-lg {
+  font-size: $font-size-lg;
+}
+.text-wrap {
+  white-space: normal !important;
+}
+.text-nowrap {
+  white-space: nowrap !important;
+}
+.text-truncate {
+  @include text-truncate;
+}
+
+// Transformation
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}

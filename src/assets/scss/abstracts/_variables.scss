@@ -1,0 +1,136 @@
+// COLOR
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #5dc2a4 !default;
+$cyan: #17a2b8 !default;
+
+// SPACING
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+$spacer: 2rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    )
+  ),
+  $spacers
+);
+
+// FONT-FAMILY
+$font-family-serif: Georgia, serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// FONT-SIZE
+$font-size-sm: rem(12px) !default;
+$font-size-md: rem(20px) !default;
+$font-size-lg: rem(30px) !default;
+$font-size-xl: rem(60px) !default;
+$font-size-base: 0.95rem !default;
+
+// FONT-WEIGHT
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+// $h1-font-size: $font-size-base * 2.5 !default;
+// $h2-font-size: $font-size-base * 2 !default;
+// $h3-font-size: $font-size-base * 1.75 !default;
+// $h4-font-size: $font-size-base * 1.5 !default;
+// $h5-font-size: $font-size-base * 1.25 !default;
+// $h6-font-size: $font-size-base !default;
+
+// $headings-margin-bottom: $spacer / 2 !default;
+// $paragraph-margin-bottom: 1rem !default;
+
+// LINE-HEIGHT
+$line-height-sm: 1.2 !default;
+$line-height-md: 1.6 !default;
+$line-height-lg: 2 !default;
+$line-height-base: $line-height-md !default;
+
+// LAYOUT
+$container-max-widths: (
+  xs: 94%,
+  sm: 94%,
+  md: 94%,
+  lg: 94%,
+  xl: 1200px
+) !default;
+
+// GRID
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// TRANSITION
+$transition-base: all 0.25s ease-in-out;
+
+// Z-INDEX
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+// OPTIONS
+$enable-grid-classes: true !default;
+
+// UTILITIES
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex,
+  inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+
+$border-radius: 5px !default;

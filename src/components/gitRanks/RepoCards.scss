@@ -1,0 +1,70 @@
+@import '../../assets/scss/abstracts/variables';
+
+.repoCards {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.repoCard {
+  background-color: $gray-200;
+  margin-bottom: 2rem;
+  border: 0.9rem solid $gray-300;
+  min-height: 22rem;
+}
+
+.repoCard__header {
+  padding: 0.75rem 1rem;
+  color: $gray-900;
+}
+
+.repoCard__header h2 {
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  word-break: break-all;
+}
+
+.repoCard__rank {
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.5rem;
+
+  // .svg-inline--fa {
+  //   color: $teal;
+  // }
+}
+
+.repoCard__pic {
+  max-width: 30%;
+  height: auto;
+  max-height: 20rem;
+}
+
+.repoCard__body {
+  list-style-type: none;
+  padding: 1rem 1.5rem 1rem 2rem;
+  color: $gray-700;
+
+  li {
+    position: relative;
+    line-height: $line-height-sm;
+    padding: 0 0 0.7rem 1.4rem;
+
+    .svg-inline--fa {
+      position: absolute;
+      top: 0.1rem;
+      left: 0;
+    }
+
+    a {
+      transition: all 0.2s;
+
+      &:hover {
+        color: $teal;
+      }
+    }
+  }
+
+  li:nth-child(2) .svg-inline--fa {
+    left: -0.1rem;
+  }
+}

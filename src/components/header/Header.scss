@@ -1,0 +1,36 @@
+@import '../../assets/scss/abstracts/variables';
+
+.header {
+  background-color: $gray-900;
+  color: $gray-200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+  height: 2.5rem;
+
+  a {
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+}
+
+.logo {
+  font-size: $font-size-md;
+  font-weight: $font-weight-light;
+}
+
+.nav ul {
+  font-weight: $font-weight-light;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}

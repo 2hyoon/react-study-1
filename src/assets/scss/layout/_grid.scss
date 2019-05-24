@@ -1,0 +1,53 @@
+@if $enable-grid-classes {
+  .container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
+
+@if $enable-grid-classes {
+  .container-fluid {
+    // @include make-container();
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Row
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+  }
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+// Columns
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
+
+// Customize
+// .col-card {
+//   @include make-col-ready();
+
+//   @include media-breakpoint-up(sm) {
+//     @include make-col(6);
+//   }
+
+//   @include media-breakpoint-up(md) {
+//     @include make-col(4);
+//   }
+// }
