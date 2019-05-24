@@ -4,7 +4,7 @@ import '../button/Button.scss';
 import './LangNav.scss';
 
 const LangNav = props => {
-  const languages = ['All', 'Javascript', 'CSS', 'JAVA', 'Python'];
+  const languages = ['All', 'Javascript', 'CSS', 'JAVA', 'Python', 'PHP', 'C'];
   return (
     <div className="container">
       <ul className="langNav">
