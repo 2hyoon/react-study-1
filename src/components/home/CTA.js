@@ -1,6 +1,5 @@
 import React from 'react';
 import './CTA.scss';
-import img from '../../assets/images/test.jpg';
 
 const CTA = props => {
   return (
@@ -10,7 +9,6 @@ const CTA = props => {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <h2>Ipsam minima consectetur facere.</h2>
-              <img src={img} alt="img" />
               <p>
                 Molestias ex nobis non minima tempore blanditiis dolor molestiae
                 harum dolores nihil, doloremque distinctio vel, eveniet quos
