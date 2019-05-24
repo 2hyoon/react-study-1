@@ -66,6 +66,18 @@ module.exports = env => {
               loader: 'react-svg-loader'
             }
           ]
+        },
+        {
+          test: /\.(jpg|png|gif|pdf|ico)$/,
+          exclude: /(node_modules|bower_components)/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[path][name]-[hash:8].[ext]'
+              }
+            }
+          ]
         }
       ]
     },
