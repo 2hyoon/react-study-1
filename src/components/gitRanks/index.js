@@ -4,6 +4,7 @@ import LangNav from './LangNav';
 import { RepoCards } from './RepoCards';
 import { fetchRepos } from './api';
 import { FaSpinnerLoader } from '../loader';
+import queryString from 'query-string';
 
 export default class GitRanks extends React.Component {
   state = {
@@ -12,7 +13,8 @@ export default class GitRanks extends React.Component {
   };
 
   componentDidMount() {
-    this.updateLanguage(this.state.language);
+    const { language } = queryString.parse(this.props.location.search);
+    this.updateLanguage(language ? language : this.state.language);
   }
 
   updateLanguage = language => {

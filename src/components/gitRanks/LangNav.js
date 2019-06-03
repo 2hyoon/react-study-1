@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import '../button/Button.scss';
 import './LangNav.scss';
 
@@ -10,14 +11,15 @@ const LangNav = props => {
       <ul className="langNav">
         {languages.map(language => (
           <li key={language}>
-            <button
+            <Link
               className={`btn btn--white btn--md text-bold ${
                 language === props.language ? 'enabled' : null
               }`}
               onClick={() => props.onUpdateLanguage(language)}
+              to={`/gitranks?language=${language}`}
             >
               {language}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>
