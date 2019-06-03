@@ -13,7 +13,7 @@ const CTA = props => {
 
   return (
     <div className="container-fluid">
-      <div className="CTA">
+      <div className="CTA scroll-animate">
         <div className="container text-align-center">
           <div className="row justify-content-center">
             <div className="col-md-8">

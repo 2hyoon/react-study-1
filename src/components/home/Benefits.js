@@ -11,7 +11,10 @@ const Benefits = props => {
         <div className="container">
           {items.map((item, index) => {
             return (
-              <div className="row justify-content-center mb-5" key={index}>
+              <div
+                className="row justify-content-center mb-5 scroll-animate"
+                key={index}
+              >
                 <div className={`col-lg-5 ${index % 2 == 1 && 'order-lg-1'}`}>
                   <h3>{item.title}</h3>
                   <p>{item.body}</p>

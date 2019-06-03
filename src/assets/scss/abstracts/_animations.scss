@@ -1,0 +1,36 @@
+.scroll-animate {
+  opacity: 0;
+  top: 4rem;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.scroll-animate-out {
+  opacity: 1;
+  top: 0;
+}
+
+.animate-in {
+  opacity: 0;
+  transition: all 0.75s ease;
+}
+
+.animate-out {
+  opacity: 1;
+}
+
+/* sample */
+// @keyframes fadein {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .sample {
+//   opacity: 0;
+//   animation-name: fadein;
+//   animation-duration: 4s;
+// }

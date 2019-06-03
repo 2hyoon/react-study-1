@@ -8,7 +8,7 @@ const PriceCards = props => {
 
   return (
     <div className="container-fluid">
-      <div className="priceCards">
+      <div className="priceCards scroll-animate">
         <div className="container">
           <div className="container">
             <div className="row">
