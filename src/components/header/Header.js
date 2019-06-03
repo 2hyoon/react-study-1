@@ -9,14 +9,18 @@ const Header = props => {
         <div className="row align-items-center">
           <div className="col-6">
             <div className="logo">
-              <NavLink to="/">REACT STUDY</NavLink>
+              <NavLink exact to="/" activeClassName="enabled">
+                REACT STUDY
+              </NavLink>
             </div>
           </div>
           <div className="col-6">
             <nav className="nav">
               <ul>
                 <li>
-                  <NavLink to="/gitranks">REPO RANKS</NavLink>
+                  <NavLink to="/gitranks" activeClassName="enabled">
+                    REPO RANKS
+                  </NavLink>
                 </li>
               </ul>
             </nav>
