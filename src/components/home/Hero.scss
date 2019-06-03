@@ -3,5 +3,41 @@
 .hero {
   background-color: $gray-400;
   padding: 6rem 0 12rem;
-  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.svg-poly {
+  height: auto;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.svg-poly:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  width: 60%;
+  transform: rotate(220deg);
+  path {
+    fill: $gray-300;
+  }
+}
+
+.svg-poly:nth-child(2) {
+  top: 10%;
+  left: 48%;
+  width: 40%;
+  transform: rotate(50deg);
+  path {
+    fill: $gray-500;
+  }
+}
+
+.svg-poly:nth-child(3) {
+  top: 53%;
+  left: 58%;
+  width: 30%;
+  transform: rotate(80deg);
+  path {
+    fill: $gray-700;
+  }
 }

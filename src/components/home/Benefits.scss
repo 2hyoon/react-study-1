@@ -4,6 +4,14 @@
   padding: 4rem 0;
 }
 
-.shape1 circle {
-  fill: $gray-400;
+.svg-circle {
+  width: 50%;
+
+  circle {
+    fill: $gray-400;
+  }
+}
+
+.benefits .row:nth-child(2) .svg-circle circle {
+  fill: $gray-600;
 }

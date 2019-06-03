@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.scss';
 import '../button/Button.scss';
-import Pic1 from '../../assets/images/shape-polygon.svg';
+import Svg1 from '../../assets/images/shape-polygon.svg';
 
 export default class Hero extends React.Component {
   componentDidMount() {
@@ -45,7 +45,9 @@ export default class Hero extends React.Component {
                 </a>
               </div>
               <div className="col-lg-5 text-align-center">
-                <Pic1 />
+                <Svg1 className="svg-poly" />
+                <Svg1 className="svg-poly" />
+                <Svg1 className="svg-poly" />
               </div>
             </div>
           </div>

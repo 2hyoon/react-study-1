@@ -1,6 +1,6 @@
 import React from 'react';
 import './Benefits.scss';
-import Shape1 from '../../assets/images/shape-circle.svg';
+import Svg1 from '../../assets/images/shape-circle.svg';
 
 const Benefits = props => {
   const { items } = props.contents;
@@ -20,7 +20,7 @@ const Benefits = props => {
                   <p>{item.body}</p>
                 </div>
                 <div className="col-lg-5 text-align-center">
-                  <Shape1 className="shape1" />
+                  <Svg1 className="svg-circle" />
                 </div>
               </div>
             );
