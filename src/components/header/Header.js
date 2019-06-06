@@ -18,8 +18,8 @@ const Header = props => {
             <nav className="nav">
               <ul>
                 <li>
-                  <NavLink to="/gitranks" activeClassName="enabled">
-                    REPO RANKS
+                  <NavLink to="/bits-and-pieces/" activeClassName="enabled">
+                    Bits & Pieces
                   </NavLink>
                 </li>
               </ul>

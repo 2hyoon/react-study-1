@@ -6,7 +6,9 @@ import { FaSpinnerLoader } from './components/loader/';
 import './index.scss';
 
 const Home = React.lazy(() => import('./components/home'));
+const BitsAndPieces = React.lazy(() => import('./components/list'));
 const GitRanks = React.lazy(() => import('./components/gitRanks'));
+const Baseball = React.lazy(() => import('./components/baseball'));
 const Error404 = React.lazy(() => import('./components/error'));
 
 class App extends React.Component {
@@ -18,7 +20,9 @@ class App extends React.Component {
           <React.Suspense fallback={<FaSpinnerLoader />}>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/gitranks" component={GitRanks} />
+              <Route exact path="/bits-and-pieces" component={BitsAndPieces} />
+              <Route path="/bits-and-pieces/gitranks" component={GitRanks} />
+              <Route path="/bits-and-pieces/baseball" component={Baseball} />
               <Route component={Error404} />
             </Switch>
           </React.Suspense>

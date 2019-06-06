@@ -1,0 +1,21 @@
+@import '../../assets/scss/abstracts/variables';
+
+.list {
+  list-style: none;
+
+  li a {
+    background-color: $gray-300;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 2rem;
+    display: block;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $gray-700;
+
+    &:hover {
+      background-color: $gray-400;
+      color: $gray-900;
+    }
+  }
+}
