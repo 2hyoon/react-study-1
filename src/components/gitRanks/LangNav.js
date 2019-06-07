@@ -16,7 +16,7 @@ const LangNav = props => {
                 language === props.language ? 'enabled' : null
               }`}
               onClick={() => props.onUpdateLanguage(language)}
-              to={`/gitranks?language=${language}`}
+              to={`/bits-and-pieces/gitranks?language=${language}`}
             >
               {language}
             </Link>
